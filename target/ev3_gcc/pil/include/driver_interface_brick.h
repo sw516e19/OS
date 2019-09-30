@@ -20,7 +20,7 @@ typedef enum {
  * Common definitions.
  */
 
-#define MAX_DEVICE_DATALENGTH (32) //!< Max device data length, derived from MAX_DEVICE_DATALENGTH in 'lms2012.h'
+#define MAX_DEVICE_DATALENGTH (64) //!< Max device data length, derived from MAX_DEVICE_DATALENGTH in 'lms2012.h'
 #define TNUM_INPUT_PORT 	  (4)  //!< Number of input ports in the system, derived from INPUTS in 'lms2012.h'
 #define TNUM_OUTPUT_PORT 	  (4)  //!< Number of output ports in the system, derived from OUTPUTS in 'lms2012.h'
 

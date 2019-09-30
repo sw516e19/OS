@@ -49,7 +49,7 @@ enum TransferState {
 
 struct IIC_data_package {
   __u8 addr;
-  __u8 data[32];
+  __u8 data[64];
   __u8 read_length;
   __u8 write_length;
   __u8 clock_state;
