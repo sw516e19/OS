@@ -1,0 +1,50 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Kernel",
+      "type": "shell",
+      "command": "cd base-workspace && make app=loader",
+      "group": "none"
+    },
+    {
+      "label": "Build Kernel & open folder",
+      "type": "shell",
+      "command": "cd ./base-workspace/ && explorer.exe .",
+      "dependsOn": [
+        "Build Kernel"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "build app",
+      "type": "shell",
+      "command": "cd workspace && make app=${input:folder}"
+    },
+    {
+      "label": "upload app",
+      "type": "shell",
+      "command": "./upload.sh ${input:folder}",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "folder",
+      "type": "pickString",
+      "options": [
+        "pixycam-test",
+        "helloev3",
+        "gyroboy",
+        "jacob"
+      ],
+      "description": "Which app do you want to build?",
+      "default": "pixycam-test"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "files.associations": {
+    "serial.h": "c",
+    "*.ipp": "cpp",
+    "array": "cpp",
+    "*.tcc": "cpp",
+    "bitset": "cpp",
+    "string": "cpp",
+    "vector": "cpp",
+    "string_view": "cpp",
+    "functional": "cpp",
+    "iomanip": "cpp",
+    "istream": "cpp",
+    "limits": "cpp",
+    "ostream": "cpp",
+    "ratio": "cpp",
+    "sstream": "cpp",
+    "streambuf": "cpp",
+    "exception": "cpp"
+  }
+}
