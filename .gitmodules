@@ -4,9 +4,9 @@
 [submodule "modules/usblib"]
 	path = modules/usblib
 	url = https://github.com/ev3rt-git/usblib.git
-[submodule "sdk"]
-	path = sdk
-	url = https://github.com/ev3rt-git/ev3rt-hrp2-sdk.git
 [submodule "mbed-on-toppers"]
 	path = modules/mbed-on-toppers
 	url = https://github.com/ev3rt-git/mbed-on-toppers.git
+[submodule "sdk"]
+	path = sdk
+	url = https://github.com/sw516e19/sdk.git
