@@ -97,7 +97,7 @@ ER _start_i2c_transaction(int port, uint_t addr, const uint8_t *writebuf, uint_t
 	datapkg->clock_state      =  1;
 	datapkg->transfer_state   =  TRANSFER_START;
 
-	iic_fiq_start_transfer(50,1); // TODO: check this, use cyclic instead
+	iic_fiq_start_transfer(8,1); // TODO: check this, use cyclic instead
 
 	ercd = E_OK;
 
