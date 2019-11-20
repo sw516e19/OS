@@ -1,6 +1,6 @@
 set -e
 
-if [ -z "$1"] 
+if [ -z "$1" ]
 then
   exit
 fi
